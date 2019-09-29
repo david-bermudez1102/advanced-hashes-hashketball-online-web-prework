@@ -221,5 +221,5 @@ def player_with_longest_name
   }
 
   players = players.flatten
-team
+players
 end
