@@ -225,7 +225,6 @@ def player_with_longest_name
   players.inject { |f, s|
     f.length > s.length ? f : s
   }
-  players
 end
 
 def long_name_steals_a_ton?
