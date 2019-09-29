@@ -180,9 +180,10 @@ def most_points_scored
     level[:players].each { |stat|
       index = (stat[:points]).find_index(most_points.to_s)
         if((stat[:points]).find_index(most_points.to_s))
-          number_of_rebounds = stat[:rebounds][index]
+          most_points_scored_p = stat[:player_name][index]
         end
     }
   }
-number_of_rebounds.to_i
+  
+most_points_scored_p
 end
