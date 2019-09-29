@@ -221,5 +221,8 @@ def player_with_longest_name
   }
 
   players = players.flatten
-players
+
+  players.inject { |f, s| 
+    f.length > s.length ? f : s 
+  }
 end
