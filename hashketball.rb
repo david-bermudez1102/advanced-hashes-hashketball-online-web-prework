@@ -206,6 +206,7 @@ def winning_team
       }
   }
 
+team = points_sum.max_by{|k,v| v}
 
-points_sum
+team
 end
