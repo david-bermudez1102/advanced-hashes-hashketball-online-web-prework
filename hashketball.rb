@@ -243,7 +243,7 @@ def long_name_steals_a_ton?
   game_hash.each { |team,level|
     level[:players].each { |stat|
       index = (stat[:player_name]).find_index(player_with_longest_name)
-      if(level[:steals][index]==most_steals)
+      if(level[:steals][index]==most_steals.to_s)
         true
       else
         false
