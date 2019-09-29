@@ -204,7 +204,7 @@ def winning_team
       points_sum[index] += point
     }
   }
-  
+
 
 points_sum
 end
