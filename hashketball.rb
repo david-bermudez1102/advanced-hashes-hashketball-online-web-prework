@@ -149,5 +149,10 @@ def big_shoe_rebounds
   shoe_sizes = shoe_sizes.sort
   biggest_shoe_size = shoe_sizes[(shoe_sizes.length)-1]
 
+  game_hash.each { |team,level|
+    level[:players].each { |stat|
+        index = (stat[:player_name]).find_index(player)
+    }
+  }
 biggest_shoe_size
 end
