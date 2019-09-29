@@ -241,7 +241,7 @@ def long_name_steals_a_ton?
 
   game_hash.each { |team,level|
     level[:players].each { |stat|
-        steals[index] = stat[:steals]
+        index = (stat[:player_name]).find_index(long_name_steals_a_ton)
     }
   }
 end
