@@ -159,5 +159,5 @@ def big_shoe_rebounds
         end
     }
   }
-biggest_shoe_size
+number_of_rebounds
 end
