@@ -174,7 +174,7 @@ numbers = ""
   game_hash.each { |team,level|
     level[:players].each { |stat|
     if(level[:team_name]==team_name)
-      numbers = stat[:numbers]
+      numbers = stat[:number]
     end
     }
   }
