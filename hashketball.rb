@@ -152,7 +152,7 @@ def big_shoe_rebounds
   game_hash.each { |team,level|
     level[:players].each { |stat|
       index = (stat[:shoe_size]).find_index(biggest_shoe_size.to_s)
-        
+
     }
   }
 biggest_shoe_size
