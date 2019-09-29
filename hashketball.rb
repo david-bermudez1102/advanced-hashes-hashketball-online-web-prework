@@ -178,7 +178,7 @@ def most_points_scored
 
   game_hash.each { |team,level|
     level[:players].each { |stat|
-      index = (stat[:shoe]).find_index(biggest_shoe_size.to_s)
+      index = (stat[:player_name]).find_index(biggest_shoe_size.to_s)
         if((stat[:shoe]).find_index(biggest_shoe_size.to_s))
           number_of_rebounds = stat[:rebounds][index]
         end
