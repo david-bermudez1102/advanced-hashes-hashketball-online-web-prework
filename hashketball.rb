@@ -207,5 +207,5 @@ def winning_team
   }
 
 
-points_sum
+points
 end
