@@ -145,4 +145,5 @@ def big_shoe_rebounds
       biggest_shoe_size = stat[:shoe]
     }
   }
+  biggest_shoe_size
 end
