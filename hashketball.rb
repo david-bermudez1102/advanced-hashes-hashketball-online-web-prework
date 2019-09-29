@@ -138,4 +138,11 @@ stats = {}
 end
 
 def big_shoe_rebounds
+  biggest_shoe_size = 0
+  game_hash.each { |team,level|
+    level[:players].each { |stat|
+      stat[:shoe].sort
+      biggest_shoe_size = stat[:shoe]
+    }
+  }
 end
