@@ -159,5 +159,5 @@ def big_shoe_rebounds
         end
     }
   }
-number_of_rebounds.to_a
+number_of_rebounds.to_o
 end
