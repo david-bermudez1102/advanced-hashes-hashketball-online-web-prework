@@ -6,14 +6,14 @@ def game_hash
       :colors => %w(Black White),
       :players => [
         :player_name => ["Alan Anderson","Reggie Evans","Brook Lopez","Mason Plumlee","Jason Terry"],
-        :numbers => %w(0 30 11 1 31),
+        :number => %w(0 30 11 1 31),
         :shoe => %w(16 14	17 19	15),
         :points => %w(22 12	17 26	19),
         :rebounds => %w(12 12	19 11 2),
         :assists => %w(12	12 10	6	2),
         :steals => %w(3	12 3 3 4),
         :blocks => %w(1	12 1 8 11),
-        :slams => %w(1 7 15	5	1)
+        :slam_dunks => %w(1 7 15	5	1)
     ]
   },
     :away => {
@@ -21,14 +21,14 @@ def game_hash
         :colors => %w(Turquoise Purple),
         :players => [
           :player_name => ["Jeff Adrien",	"Bismack Biyombo",	"DeSagna Diop",	"Ben Gordon",	"Kemba Walker"],
-          :numbers => %w(4 0 2 8 33),
+          :number => %w(4 0 2 8 33),
           :shoe => %w(18 16 14 15 15),
           :points => %w(10 12 24 33 6),
           :rebounds => %w(1 4 12 3 12),
           :assists => %w(1 7 12 2 12),
           :steals => %w(2 22 4 1 7),
           :blocks => %w(7 15 5 1 5),
-          :slams => %w(2 10 5 0 12)
+          :slam_dunks => %w(2 10 5 0 12)
         ]
       }
     }
