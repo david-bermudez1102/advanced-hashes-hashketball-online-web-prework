@@ -190,6 +190,7 @@ end
 
 def winning_team
   points = Array.new
+  points_sum = Array.new
   team = ""
 
   game_hash.each_with_index { |(team,level), index|
@@ -198,6 +199,11 @@ def winning_team
     }
   }
 
+  points.each_with_index { |e,index|
+    e.each { |point|
+      points_sum[index] += point
+    }
+  }
   points = points.flatten
   points = points.sort
   most_points = points[(points.length)-1]
