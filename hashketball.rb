@@ -231,7 +231,7 @@ end
 def long_name_steals_a_ton?
   steals = Array.new
   player = player_with_longest_name
-  
+
   game_hash.each_with_index { |(team,level), index|
     level[:players].each { |stat|
         steals[index] = stat[:steals]
