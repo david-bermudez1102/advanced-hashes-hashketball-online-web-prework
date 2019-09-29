@@ -234,4 +234,6 @@ def long_name_steals_a_ton?
         players[index] = stat[:steals]
     }
   }
+
+  steals = steals.flatten
 end
