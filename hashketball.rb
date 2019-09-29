@@ -141,7 +141,7 @@ def big_shoe_rebounds
   shoe_sizes = 0
   game_hash.each { |team,level|
     level[:players].each { |stat|
-      shoe_sizes = stat[:shoe]
+      shoe_sizes += stat[:shoe]
     }
   }
   shoe_sizes
