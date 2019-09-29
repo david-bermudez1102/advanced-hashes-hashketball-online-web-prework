@@ -210,3 +210,26 @@ team = points_sum.max_by{|k,v| v}[0]
 
 team
 end
+
+def player_with_longest_name
+  players = Array.new
+  points_sum = Hash.new
+  team = ""
+
+  game_hash.each_index { |(team,level), index|
+    level[:players].each { |stat|
+        points[level[:team_name]] = stat[:points].map(&:to_i)
+    }
+  }
+
+  points.each { |team,value|
+    points_sum[team] = 0
+      value.each { |point|
+        points_sum[team] += point
+      }
+  }
+
+team = points_sum.max_by{|k,v| v}[0]
+
+team
+end
