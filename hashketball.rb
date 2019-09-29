@@ -155,7 +155,7 @@ def big_shoe_rebounds
     level[:players].each { |stat|
       index = (stat[:shoe]).find_index(biggest_shoe_size.to_s)
         if((stat[:shoe]).find_index(biggest_shoe_size.to_s))
-          number_of_rebounds = stat[:shoe][index]
+          number_of_rebounds = stat[:rebounds][index]
         end
     }
   }
