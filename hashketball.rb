@@ -92,7 +92,6 @@ points = 0;
   points
 end
 
-
 def team_names
 
 teams = Array.new()
