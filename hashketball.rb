@@ -164,7 +164,7 @@ end
 
 def most_points_scored
   points = Array.new
-  number_of_rebounds = 0
+  most_points_scored_p = ""
 
   game_hash.each_with_index { |(team,level), index|
     level[:players].each { |stat|
