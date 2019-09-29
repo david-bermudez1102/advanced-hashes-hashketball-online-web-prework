@@ -145,6 +145,6 @@ def big_shoe_rebounds
     }
   }
 
-  biggest_shoe_size = 
+  biggest_shoe_size =
   shoe_sizes.flatten
 end
