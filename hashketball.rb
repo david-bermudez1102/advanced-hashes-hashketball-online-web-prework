@@ -202,7 +202,7 @@ def winning_team
   points.each { |team,value|
     points_sum[team] = 0
       value.each { |point|
-        points_sum[team] += value
+        points_sum[team] += point
       }
   }
 
