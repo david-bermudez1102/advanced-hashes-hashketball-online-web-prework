@@ -184,6 +184,6 @@ def most_points_scored
         end
     }
   }
-  
+
 most_points_scored_p
 end
