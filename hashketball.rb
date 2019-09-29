@@ -199,7 +199,7 @@ def winning_team
     }
   }
 
-  points.each_with_index { |e,index|
+  points.each { |team,value|
     points_sum[index] = 0
     e.each { |point|
       points_sum[index] += point
