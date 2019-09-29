@@ -174,12 +174,12 @@ def most_points_scored
 
   points = points.flatten
   points = points.sort
-  most_points_scored = points[(points.length)-1]
+  most_points = points[(points.length)-1]
 
   game_hash.each { |team,level|
     level[:players].each { |stat|
-      index = (stat[:points]).find_index(most_points_scored.to_s)
-        if((stat[:points]).find_index(most_points_scored.to_s))
+      index = (stat[:points]).find_index(most_points.to_s)
+        if((stat[:points]).find_index(most_points.to_s))
           number_of_rebounds = stat[:rebounds][index]
         end
     }
