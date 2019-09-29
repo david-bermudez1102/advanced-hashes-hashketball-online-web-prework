@@ -93,6 +93,17 @@ points = 0;
 end
 
 
+def team_names
+
+teams = Array.new()
+
+  game_hash.each_with_index { |(team,level),index|
+      teams[index] = level[:team_name]
+  }
+
+  teams
+end
+
 def player_numbers(team_name)
 
 numbers = ""
