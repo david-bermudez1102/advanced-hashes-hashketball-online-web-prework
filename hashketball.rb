@@ -214,7 +214,7 @@ end
 def player_with_longest_name
   players = Array.new
 
-  game_hash.each_index { |(team,level), index|
+  game_hash.each_with_index { |(team,level), index|
     level[:players].each { |stat|
         players[index] = stat[:player_name]
     }
