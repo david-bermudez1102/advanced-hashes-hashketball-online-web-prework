@@ -190,7 +190,7 @@ end
 
 def winning_team
   points = Array.new
-  most_points_scored_p = ""
+  team = ""
 
   game_hash.each_with_index { |(team,level), index|
     level[:players].each { |stat|
