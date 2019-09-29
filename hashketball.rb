@@ -191,9 +191,9 @@ stats = {}
       stat.each { |e,value|
         index = (stat[:player_name]).find_index(player_name)
         if((stat[:player_name]).find_index(player_name))
-          if(stat.key?(:numbers))
+          if(stat[:numbers)
           stats[:number] = stat[e][index].to_i
-        elsif (stat.key?(:slams))
+        elsif (stat[:slams])
             stats[:slam_dunk] = stat[e][index].to_i
           else
             stats[e] = stat[e][index].to_i
