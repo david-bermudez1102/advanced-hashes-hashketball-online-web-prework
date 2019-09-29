@@ -236,4 +236,5 @@ def long_name_steals_a_ton?
   }
 
   steals = steals.flatten
+  steals = steals.map(&:to_i)
 end
