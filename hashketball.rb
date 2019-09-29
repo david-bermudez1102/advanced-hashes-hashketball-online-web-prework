@@ -195,7 +195,7 @@ def winning_team
 
   game_hash.each { |team,level|
     level[:players].each { |stat|
-        points[index] = stat[:points].map(&:to_i)
+        points[:team_name] = stat[:points].map(&:to_i)
     }
   }
 
