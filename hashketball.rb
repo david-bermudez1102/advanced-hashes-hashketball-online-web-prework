@@ -190,7 +190,7 @@ end
 
 def winning_team
   points = Hash.new
-  points_sum = Array.new
+  points_sum = Hash.new
   team = ""
 
   game_hash.each { |team,level|
