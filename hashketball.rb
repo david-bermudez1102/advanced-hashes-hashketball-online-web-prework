@@ -132,7 +132,7 @@ stats = {}
       }
     }
   }
-
+  stats.delete(:player_name)
   stats
 
 end
