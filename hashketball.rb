@@ -189,11 +189,11 @@ most_points_scored_p
 end
 
 def winning_team
-  points = Array.new
+  points = Hash.new
   points_sum = Array.new
   team = ""
 
-  game_hash.each_with_index { |(team,level), index|
+  game_hash.each { |team,level|
     level[:players].each { |stat|
         points[index] = stat[:points].map(&:to_i)
     }
