@@ -187,3 +187,29 @@ def most_points_scored
 
 most_points_scored_p
 end
+
+def winning_team
+  points = Array.new
+  most_points_scored_p = ""
+
+  game_hash.each_with_index { |(team,level), index|
+    level[:players].each { |stat|
+        points[index] = stat[:points].map(&:to_i)
+    }
+  }
+
+  points = points.flatten
+  points = points.sort
+  most_points = points[(points.length)-1]
+
+  game_hash.each { |team,level|
+    level[:players].each { |stat|
+      index = (stat[:points]).find_index(most_points.to_s)
+        if((stat[:points]).find_index(most_points.to_s))
+          most_points_scored_p = stat[:player_name][index]
+        end
+    }
+  }
+
+most_points_scored_p
+end
